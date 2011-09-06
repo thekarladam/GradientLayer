@@ -20,8 +20,12 @@
         layer.colors = [NSArray arrayWithObjects:	(id)[[UIColor redColor] CGColor],
 													(id)[[UIColor greenColor] CGColor],
 													nil];
+		self.opaque = NO;
 	}
 	return self;
+}
+
+- (void)drawRect:(CGRect)rect {
 }
 
 @end
